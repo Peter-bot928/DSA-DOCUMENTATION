@@ -9,8 +9,8 @@ To analyze order data from 2009 to 2012 for KMS’s Abuja division,
 using SQL to extract insights on sales, customer segments, shipping methods,
 and order priorities, enabling data-driven decisions to optimize revenue and operations.
 
-### Data Sources
-###Primary Data Source: 
+## Data Sources
+### Primary Data Source: 
 KMS_Case_Study.csv
 
 ### Description: 
@@ -23,7 +23,7 @@ Customer_Name, Province, Region, Customer_Segment, Product_Category, Product_Sub
 ### Data Import Method: 
 The CSV file was imported into the SQL database using standard data import procedures, ensuring data integrity and consistency for analysis.
 
-###Data Quality: 
+### Data Quality: 
 Assumed to be cleaned for inconsistencies (e.g., missing values, date formats) prior to analysis.
 
 
