@@ -14,7 +14,7 @@ and order priorities, enabling data-driven decisions to optimize revenue and ope
 KMS_Case_Study.csv
 
 ## Tools Used:
-- Ms Excel for preliminary data exploration and validation of the KMS_Case_Study.csv file [Download Here]({https://www.google.com)
+- Ms Excel for preliminary data exploration and validation of the KMS_Case_Study.csv file [Download Here](https://www.google.com)
 - SQL Server for storing and managing the dataset in the KMS_DB database, with the orders table containing 8,400 rows and 21 columns.
 - SQL Server Management Studio (SSMS): Utilized for writing and executing SQL queries to analyze the data.
 - GitHub: Used for version control and hosting the project documentation, queries, and dataset.
