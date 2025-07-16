@@ -29,8 +29,10 @@ Assumed to be cleaned for inconsistencies (e.g., missing values, date formats) p
 
 ## Tools and Techniques:
 
-SQL: Queries were executed on the KMS_Case_Study table in the KMS_DB database.
-
+SQL Server: for storing and managing the dataset in the KMS_DB database, with the orders table containing 8,400 rows and 21 columns.
+SQL Server Management Studio (SSMS): Utilized for writing and executing SQL queries to analyze the data.
+Excel: Employed for preliminary data exploration and validation of the KMS_Case_Study.csv file before importing into SQL Server.
+GitHub: Used for version control and hosting the project documentation, queries, and dataset.
 
 
 
