@@ -4,7 +4,7 @@ My DSA Data Analysis Capstone Portfolio showcasing Excel, Power BI, and SQL skil
 
 ## Project Topic: SQL-Based Inventory Analysis for Kultra Mega Stores (KMS) Abuja Division
 
-### Project Overview: 
+## Project Overview: 
 To analyze order data from 2009 to 2012 for KMS’s Abuja division, 
 using SQL to extract insights on sales, customer segments, shipping methods,
 and order priorities, enabling data-driven decisions to optimize revenue and operations.
@@ -12,6 +12,33 @@ and order priorities, enabling data-driven decisions to optimize revenue and ope
 ## Data Sources
 ### Primary Data Source: 
 KMS_Case_Study.csv
+
+## Tools Used:
+- Ms Excel for preliminary data exploration and validation of the KMS_Case_Study.csv file [Download Here]({https;//www.microsoft.com)
+- SQL Server for storing and managing the dataset in the KMS_DB database, with the orders table containing 8,400 rows and 21 columns.
+- SQL Server Management Studio (SSMS): Utilized for writing and executing SQL queries to analyze the data.
+- GitHub: Used for version control and hosting the project documentation, queries, and dataset.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Description: 
 An Excel file containing order data for KMS’s Abuja division from 2009 to 2012, imported into the KMS_Case_Study table in the KMS_DB database.
@@ -35,4 +62,4 @@ Excel: Employed for preliminary data exploration and validation of the KMS_Case_
 GitHub: Used for version control and hosting the project documentation, queries, and dataset.
 
 
-
+## :
