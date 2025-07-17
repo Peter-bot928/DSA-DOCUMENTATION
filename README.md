@@ -2,6 +2,10 @@
 My DSA Data Analysis Capstone Portfolio showcasing Excel, Power BI, and SQL skills
 
 
+
+
+## CASE STUDY 1
+
 ## Project Topic: SQL-Based Inventory Analysis for Kultra Mega Stores (KMS) Abuja Division
 
 ## Project Overview: 
@@ -170,6 +174,11 @@ ORDER BY Ship_Mode, Order_Priority;
 
 
 
+
+
+
+
+## CASE STUDY 2
 
 
 
