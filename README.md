@@ -217,6 +217,15 @@ EDA involved the exploring of the Data to answer some Questions about the Data s
 - Show insight on ratings based on Gender
 - Analyze the Company Salary Structure
 
-##  Data Analysis:
+## Result Findings
+<img width="2789" height="1728" alt="Screenshot 2025-07-06 032851" src="https://github.com/user-attachments/assets/03b2e14c-6ec5-49b2-944b-8559af38f433" />
+
+
+<img width="2783" height="1726" alt="Screenshot 2025-07-06 032919" src="https://github.com/user-attachments/assets/546386f1-9bd5-40d4-ae6f-19132862dc28" />
+
+
+<img width="2703" height="1571" alt="Screenshot 2025-07-06 032932" src="https://github.com/user-attachments/assets/baf21868-d06c-46fe-b5fe-ef3d0e309a57" />
+
+
 
 
