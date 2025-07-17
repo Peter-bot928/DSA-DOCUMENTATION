@@ -19,7 +19,154 @@ KMS_Case_Study.csv
 - SQL Server Management Studio (SSMS): Utilized for writing and executing SQL queries to analyze the data.
 - GitHub: Used for version control and hosting the project documentation, queries, and dataset.
 
+##  Data Analysis:
+This is where i include some basic lines of code or Queries used during my Analysis. 
+Below are the Questions and Solutions to my Queries;
 
+
+-----Question 1-----
+
+---Which product category had the highest sales?---
+
+``` SQL
+SELECT TOP 1 Product_Category, SUM(Sales) AS total_sales
+FROM KMS_Case_Study
+GROUP BY Product_Category
+ORDER BY total_sales DESC;
+```
+
+
+-----Question 2-----
+
+---What are the Top 3 and Bottom 3 regions in terms of sales?---
+
+``` SQL
+SELECT TOP 3 Region, SUM(Sales) AS total_sales
+FROM KMS_Case_Study
+GROUP BY Region
+ORDER BY total_sales DESC;
+```
+
+SELECT TOP 3 Region, SUM(Sales) AS total_sales
+
+``` SQL
+FROM KMS_Case_Study
+GROUP BY Region
+ORDER BY total_sales ASC;
+```
+
+-----Question 3-----
+
+---What were the total sales of appliances in Ontario?---
+
+``` SQL
+SELECT SUM(Sales) AS total_appliance_sales
+FROM KMS_Case_Study
+WHERE Product_Category = 'Appliances' AND Region = 'Ontario';
+```
+
+-----Question 4-----
+
+---Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers.---
+
+``` SQL
+SELECT TOP 10 Customer_Name, SUM(Sales) AS total_sales
+FROM KMS_Case_Study
+GROUP BY Customer_Name
+ORDER BY total_sales ASC;
+```
+
+-----Question 5-----
+
+---KMS incurred the most shipping cost using which shipping method?---
+
+``` SQL
+SELECT TOP 1 Ship_Mode, SUM(Shipping_Cost) AS total_shipping_cost
+FROM KMS_Case_Study
+GROUP BY Ship_Mode
+ORDER BY total_shipping_cost DESC;
+```
+
+
+----Case Scenario II----
+
+-----Question 6-----
+
+---Who are the most valuable customers, and what products or services do they typically purchase?---
+
+
+``` SQL
+SELECT TOP 5 Customer_Name, SUM(Sales) AS total_sales, Product_Category
+FROM KMS_Case_Study
+GROUP BY Customer_Name, Product_Category
+ORDER BY total_sales DESC;
+```
+
+
+-----Question 7-----
+
+---Which small business customer had the highest sales?---
+
+
+``` SQL
+SELECT TOP 1 Customer_Name, SUM(Sales) AS total_sales
+FROM KMS_Case_Study
+WHERE Customer_Segment = 'Small Business'
+GROUP BY Customer_Name
+ORDER BY total_sales DESC;
+```
+
+-----Question 8-----
+
+---Which Corporate Customer placed the most number of orders in 2009–2012?---
+
+``` SQL
+SELECT TOP 1 Customer_Name, COUNT(Order_ID) AS order_count
+FROM KMS_Case_Study
+WHERE Customer_Segment = 'Corporate' 
+  AND Order_Date BETWEEN '2009-01-01' AND '2012-12-31'
+GROUP BY Customer_Name
+ORDER BY order_count DESC;
+```
+
+
+-----Question 9-----
+
+---Which consumer customer was the most profitable one?---
+
+``` SQL
+SELECT TOP 1 Customer_Name, SUM(Profit) AS total_profit
+FROM KMS_Case_Study
+WHERE Customer_Segment = 'Consumer'
+GROUP BY Customer_Name
+ORDER BY total_profit DESC;
+```
+
+-----Question 10-----
+
+---Which customer returned items, and what segment do they belong to?---
+
+``` SQL
+SELECT Customer_Name, Customer_Segment
+FROM KMS_Case_Study
+WHERE Profit < 0
+GROUP BY Customer_Name, Customer_Segment;
+```
+
+-----Question 11-----
+
+---If the delivery truck is the most economical but the slowest shipping method and Express Air--- 
+
+---is the fastest but the most expensive one, do you think the company appropriately spent--- 
+
+---shipping costs based on the Order Priority? Explain your answer.---
+
+``` SQL
+SELECT Ship_Mode, Order_Priority, AVG(Shipping_Cost) AS avg_shipping_cost
+FROM KMS_Case_Study
+GROUP BY Ship_Mode, Order_Priority
+ORDER BY Ship_Mode, Order_Priority;
+```
 
 
 
